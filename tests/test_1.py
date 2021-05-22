@@ -97,13 +97,4 @@ class TestAdd(TestBase):
         
         #print(response.data)
         self.assertIn(b"5" ,response.data)
-#   def test_add_table1_post(self):
-#         response = self.client.post(
-#             url_for('add_table'),
-#              #data = dict(number_people=5,time_booked=1999-11-21,meal_id=1),
-#         follow_redirects=True
-#         )
-        
-#         #print(response.data)
-#         self.assertIn(Tables.meal_id ,response.data)
 
