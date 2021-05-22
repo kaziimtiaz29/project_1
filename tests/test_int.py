@@ -1,7 +1,9 @@
+from application.models import MEALS
 from flask.helpers import url_for
 from selenium import webdriver
 from flask_testing import LiveServerTestCase
 from application import app, db
+from application.models import MEALS,Tables
 from urllib.request import urlopen
 class TestBase(LiveServerTestCase):
     def create_app(self):
@@ -33,3 +35,11 @@ class Testviews(TestBase):
            self.driver.find_element_by_xpath ("/html/body/a[2]").click()
            self.assertIn(url_for("to_add"), self.driver.current_url)
         
+        def test_adding(self):
+            self.driver.find_element_by_xpath ("/html/body/a[2]").click()
+            self.driver.find_element_by_xpath('//*[@id="name_"]').send_keys("burgers")
+            self.driver.find_element_by_xpath('//*[@id="category_"]').send_keys("fastfood")
+            self.driver.find_element_by_xpath('//*[@id="quantity_"]').send_keys("4")
+            self.driver.find_element_by_xpath('//*[@id="submit_"]').click()
+            meals= MEALS.query.first()
+            self.assertEqual(meals.meal_name,"burgers")

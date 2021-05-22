@@ -41,6 +41,14 @@ def is_delete(n):
     db.session.commit()
     #return 'deleted'
     return  redirect (url_for("index"))
+@app.route('/delete_table/<int:n>')
+def delete_table(n):
+    job_7 = Tables.query.get(n)
+    db.session.delete(job_7)
+    db.session.commit()
+    #return 'deleted'
+    return  redirect (url_for("index"))
+
 
 @app.route('/updatemeal/<int:n>',methods = ['GET','POST'])
 def update(n):
