@@ -78,6 +78,8 @@ below is trello board showing the user stories for my project and also showing a
 An entity relationship diagram (ERD) depicting the database's structure is shown below. The user and movies are linked in a one-to-many relationship. As a result, the foreign key is in the meal_ID column, allowing a meals to be served in several tables.
 
 ![erd](https://github.com/kaziimtiaz29/project_1/blob/master/pics/erd.png)
+
+https://drive.google.com/file/d/1FRquQ4AeuKKR8q10_Vjg3qRP5NO5fy8i/view?usp=sharing
 # Risk assessment
 The risk assessment completed before any work on the web application began is shown in the first image below.
 A screenshot of my risk assessment at the start of the project is shown below:
@@ -87,7 +89,7 @@ A screenshot of my risk assessment at the start of the project is shown below:
 and afterwards i revisited and change my risk assessment
 
 ![risk2](https://github.com/kaziimtiaz29/project_1/blob/master/pics/risk_asses_2.png)
-
+https://docs.google.com/spreadsheets/d/1uLJCYWtSiROfvL5YYhkLHYQMFc6CEGuVZG3iDaI5qsE/edit?usp=drive_web&ouid=109159636375856234989
 # Continuous Integration pipeline
 A continuous integration pipeline is depicted here, along with the frameworks and services that go with it. By automating the integration process, this pipeline enables speedy and straightforward development-to-deployment. This means that python code written on my local system using the Visual Studio Code platform can be published to Github.The new code in the repo will be posted to Jenkins via webhook, allowing it to be created on the cloud virtual machine. Unit and integration tests are run automatically after that, and reports are generated. The programmer can evaluate the report and adjust the software as needed.
 
