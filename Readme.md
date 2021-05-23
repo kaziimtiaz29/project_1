@@ -122,7 +122,7 @@ Separating the route functions and testing each one with multiple scenarios is h
 ![jenkins-test](https://github.com/kaziimtiaz29/project_1/blob/master/pics/jenkins_test.png)
 below shows the test coverage
 
-![testing-cov](https://github.com/kaziimtiaz29/project_1/blob/master/pics/cov%20reprot.png)
+![testing-cov](https://github.com/kaziimtiaz29/project_1/blob/master/pics/jenkins_test.png)
 
 ## Future Improvements
 Integration testing, as part of the selenium methodology, isperfect for testing the programme as a whole. Selenium  simulates a user exploring the site (by clicking on items on each page) and filling out forms in the manner specified by the testing, and then my tests will verify the database for the expected data.I would have liked to perform more integration testings in the future to further improve the functionality of the app.
