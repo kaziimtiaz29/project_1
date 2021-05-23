@@ -113,6 +113,10 @@ A navigation bar is located at the top of the page (defined in a base layout tem
 
 Unit testing was the first step in the project. Individual route functions are put to the test in a variety of scenarios. For a function to be considered successful, it must return the desired response in each case.
 code for running on jenkins:
+'pip3 install -r requirements.txt
+pip3 install gunicorn
+pip3 install pytest
+python3 -m pytest --junitxml=junit/test-results.xml --cov=application --cov-report=xml --cov-report=html --cov-report term-missing'
 
 
 # unit and integration testing
@@ -122,7 +126,7 @@ Separating the route functions and testing each one with multiple scenarios is h
 ![jenkins-test](https://github.com/kaziimtiaz29/project_1/blob/master/pics/jenkins_test.png)
 below shows the test coverage
 
-![testing-cov](https://github.com/kaziimtiaz29/project_1/blob/master/pics/jenkins_test.png)
+
 
 ## Future Improvements
 Integration testing, as part of the selenium methodology, isperfect for testing the programme as a whole. Selenium  simulates a user exploring the site (by clicking on items on each page) and filling out forms in the manner specified by the testing, and then my tests will verify the database for the expected data.I would have liked to perform more integration testings in the future to further improve the functionality of the app.
