@@ -113,18 +113,23 @@ A navigation bar is located at the top of the page (defined in a base layout tem
 
 Unit testing was the first step in the project. Individual route functions are put to the test in a variety of scenarios. For a function to be considered successful, it must return the desired response in each case.
 code for running on jenkins:
+
 'pip3 install -r requirements.txt
+
 pip3 install gunicorn
+
 pip3 install pytest
+
 python3 -m pytest --junitxml=junit/test-results.xml --cov=application --cov-report=xml --cov-report=html --cov-report term-missing'
 
 
 # unit and integration testing
 Separating the route functions and testing each one with multiple scenarios is how unit testing is utilised here. For the test to be successful, each function must return the expected result under each case.The proportion of the application that was tested is also shown in a coverage report. This data aids the developer in determining how much of the app's code has been successfully tested.
 
-..pics of unit testing and reports
-![jenkins-test](https://github.com/kaziimtiaz29/project_1/blob/master/pics/jenkins_test.png)
+..pics of unit testing and reports,
 below shows the test coverage
+![jenkins-test](https://github.com/kaziimtiaz29/project_1/blob/master/pics/jenkins_test.png)
+ 
 
 
 
